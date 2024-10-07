@@ -20,6 +20,7 @@ people = int(input("How many people are going to split the bill?\n"))
 totalBillPerPerson = (bill / people) * monetizedTip
 
 #give the total number each person should pay rounded to 2 decimal places 
-print("The total each person needs to pay is: $" + str(totalBillPerPerson))
+finalAmount = round(totalBillPerPerson, 2)
+print(f"The total each person needs to pay is: ${finalAmount}")
 
 
